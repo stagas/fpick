@@ -4,7 +4,9 @@
 interactively pick a file to run a command against
 </p>
 
-<img align="center" src="demo.svg">
+<p align="center">
+  <img align="center" src="demo.svg">
+</p>
 
 <p align="center">
    <a href="#install">        🔧 <strong>Install</strong></a>
