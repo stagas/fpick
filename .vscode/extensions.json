@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"usernamehw.errorlens",
+		"salbert.comment-ts",
+		"ethansk.restore-terminals",
+		"gruntfuggly.todo-tree"
+	]
+}

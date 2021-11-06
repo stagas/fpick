@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    ".husky": true,
+    "coverage": true
+  },
+  "restoreTerminals.terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "zsh",
+          "commands": []
+        }
+      ]
+    },
+  ],
+  "todo-tree.tree.scanMode": "workspace only",
+  "npm-scripts.showStartNotification": false
+}

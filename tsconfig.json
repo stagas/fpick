@@ -1,0 +1,19 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "include": [
+    "src"
+  ],
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "declaration": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "strict": true
+  }
+}

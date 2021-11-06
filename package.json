@@ -1,0 +1,78 @@
+{
+  "name": "fpick",
+  "author": "stagas",
+  "short": "stagas/fpick",
+  "description": "interactively pick a file to run a command against",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com:stagas/fpick.git"
+  },
+  "keywords": [
+    "interactive",
+    "cli",
+    "shell",
+    "bash",
+    "file",
+    "pick",
+    "picker",
+    "choose",
+    "select",
+    "selector",
+    "filepick",
+    "filepicker",
+    "fileselect",
+    "fileselector"
+  ],
+  "main": "dist/bin.js",
+  "bin": {
+    "fpick": "dist/bin.js"
+  },
+  "targets": {
+    "main": {
+      "context": "node",
+      "engines": {
+        "node": ">=16.0"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test:manual": "node -r @swc-node/register src/bin.ts src -- cat",
+    "lint": "eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "fmt": "prettier --write src",
+    "clean": "rimraf dist",
+    "prepack": "npm run clean && npm run build",
+    "prepack:dry": "npm pack --dry-run",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.3.7",
+    "@tsconfig/node16": "^1.0.2",
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "fc-filepick": "^1.0.4"
+  }
+}
