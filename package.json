@@ -43,6 +43,7 @@
   "scripts": {
     "build": "tsc",
     "test:manual": "node -r @swc-node/register src/bin.ts src -- cat",
+    "test:manual:repeat": "node -r @swc-node/register src/bin.ts src -r -- cat",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
     "fmt": "prettier --write src",

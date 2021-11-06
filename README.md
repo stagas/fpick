@@ -27,14 +27,17 @@ $ npm i fpick -g
 
 ## Usage
 
-```sh
-$ fpick <path> -- <command> [...args]
+```
+Usage: fpick <path> [options] -- <command> [...args]
+
+Options:
+  -r, --repeat   Repeat picker after command ends
 ```
 
 or without installing globally:
 
 ```sh
-$ npx fpick <path> -- <command> [...args]
+$ npx fpick docs -- cat
 ```
 
 ## Credits
